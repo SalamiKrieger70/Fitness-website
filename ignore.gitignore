@@ -1,0 +1,12 @@
+# VS Code
+.vscode/
+
+# Windows-Systemdateien
+Thumbs.db
+desktop.ini
+AppData/
+
+# Node / Build / Temp
+node_modules/
+dist/
+tmp/
