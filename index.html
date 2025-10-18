@@ -1,42 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Suk Fitness</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suks Fitness Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="antialiased">
-  <header class="p-4 shadow">
-    <nav class="container mx-auto flex justify-between">
-      <a href="#" class="font-bold">Suk Fitness</a>
-      <div class="space-x-4">
-        <a href="#trainings">Trainings</a>
-        <a href="#blog">Blog</a>
-        <a href="#kontakt">Kontakt</a>
-      </div>
-    </nav>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Header / Navigation -->
+  <header class="bg-blue-600 text-white">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-6">
+      <h1 class="text-2xl font-bold">Suks Fitness</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#startseite" class="hover:underline">Startseite</a></li>
+          <li><a href="#leistungen" class="hover:underline">Leistungen</a></li>
+          <li><a href="#ueber-mich" class="hover:underline">Über mich</a></li>
+          <li><a href="#impressum" class="hover:underline">Impressum & Datenschutz</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <main class="container mx-auto p-6">
-    <section class="my-12">
-      <h1 class="text-3xl font-extrabold">Dein Fitnessstart — einfach & nachhaltig</h1>
-      <p class="mt-4">Willkommen — hier findest du Trainingspläne für Anfänger & Fortgeschrittene.</p>
+
+  <!-- Hauptbereich -->
+  <main class="max-w-6xl mx-auto p-6 space-y-12">
+
+    <!-- Startseite -->
+    <section id="startseite" class="text-center">
+      <h2 class="text-3xl font-bold mb-4">Willkommen auf meiner Fitness-Website</h2>
+      <p class="text-gray-700">Hier findest du alles rund um Training, Ernährung und Motivation.</p>
     </section>
 
-    <section id="trainings" class="my-8">
-      <h2 class="text-2xl font-bold">Trainingsplan (Beispiel)</h2>
-      <ul class="list-disc pl-6">
-        <li>Kniebeugen — 3 × 8–10</li>
-        <li>Bankdrücken — 3 × 6–8</li>
-        <li>Rudern — 3 × 8–10</li>
-      </ul>
+    <!-- Leistungen -->
+    <section id="leistungen">
+      <h2 class="text-2xl font-bold mb-4">Leistungen</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="text-xl font-semibold mb-2">Trainingspläne</h3>
+          <p>Individuelle Pläne für Anfänger und Fortgeschrittene.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="text-xl font-semibold mb-2">Ernährungsberatung</h3>
+          <p>Tipps für gesunde Ernährung, Supplements und Mahlzeitenplanung.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="text-xl font-semibold mb-2">Motivation & Coaching</h3>
+          <p>Motivationsstrategien und Coaching für langfristige Erfolge.</p>
+        </div>
+      </div>
     </section>
 
-    <section id="kontakt" class="my-8">
-      <h2 class="text-2xl font-bold">Kontakt</h2>
-      <p>Schreibe mir: deineemail@example.com (später Einbettung eines Formulars).</p>
+    <!-- Über mich -->
+    <section id="ueber-mich">
+      <h2 class="text-2xl font-bold mb-4">Über mich</h2>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <p>Hi, ich bin Suk! Ich bin Fitness-Enthusiast und teile auf dieser Website alles, was mir beim Training, bei der Ernährung und bei der Selbstoptimierung geholfen hat. Mein Ziel: Menschen motivieren, fitter und gesünder zu werden.</p>
+      </div>
     </section>
+
+    <!-- Impressum & Datenschutz -->
+    <section id="impressum">
+      <h2 class="text-2xl font-bold mb-4">Impressum & Datenschutz</h2>
+      <div class="bg-white p-6 rounded-lg shadow space-y-2">
+        <p><strong>Impressum:</strong> Suk Musterstraße 1, 12345 Musterstadt</p>
+        <p><strong>Kontakt:</strong> kontakt@sukfitness.de</p>
+        <p><strong>Datenschutz:</strong> Diese Website erhebt keine persönlichen Daten. Cookies werden nicht genutzt.</p>
+      </div>
+    </section>
+
   </main>
-  <footer class="p-6 text-center text-sm">© Suk • Impressum • Datenschutz</footer>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center p-4">
+    <p>&copy; 2025 Suks Fitness Website</p>
+  </footer>
+
 </body>
 </html>
